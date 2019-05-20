@@ -2,12 +2,7 @@
 
 html{
 	font-size: 62.5%;
-	
-	align-items: center;
-
-	
 }
-
 
 ::-webkit-scrollbar {
 display: none;
@@ -23,7 +18,7 @@ display: none;
     border-radius: 50%;
     position: fixed;
 top: 5rem;
-right: 5rem;
+right: 15rem;
 z-index: 2000;
 box-shadow: 0 1rem 1rem rgba(0,0,0,.1);
 text-align:center;
@@ -138,17 +133,8 @@ z-index: 5;
 
 
 .bglarge{
-	background: url(img/zion.jpg) no-repeat center center fixed; ;
-/*/background-image: linear-gradient(
- 
- 
-   to bottom,
-	rgba(222, 21, 117,.4),
-		rgba(155, 135, 254,.4))
-   ;/*/
-      	background-size: cover;
-      	background-repeat: no-repeat;
-      	background-position: bottom left;
+	background: url(img/zion.jpg) no-repeat center center fixed;
+background-size: cover;
  
  }
 
@@ -156,39 +142,38 @@ z-index: 5;
 position: relative;
 	width: 160rem;
 	height: 90rem;
-	margin: auto;
-
+	margin: 5rem;
+border-radius: 10%;
  }
 
 .bg1{
--webkit-clip-path: polygon(0% 0%, 80% 0%, 97.5% 50%, 80% 100%, 0% 100%);
-}
-
-
-#video{
-	width: 170rem;
-	height: 90rem;
-	position: relative;
-	  align-self: center;
-	top: -18rem;
-	left: -6rem;
-filter:
-saturate(150%);
-z-index: -1;
+background-image:linear-gradient(
+                to right bottom,
+                rgba(168, 130, 202, 0.6),
+                rgba(168, 130, 202,0.6))
+            ,url(img/zion2.jpg);
+            clip-path: polygon(0% 0%, 80% 0%, 97.5% 50%, 80% 100%, 0% 100%);
 }
 
 .logo{
-	position: absolute;
-	top: 2.5rem;
-	left: 2.5rem;
+	position: relative;
+	align-self: center;
+	
 	z-index: 40;
-	height: 10rem;
+	height: 15rem;
+}
+.bgtitle{
+	font-family: 'Coustard', serif;
+	font-size: 5rem;
+	text-transform: uppercase;
+	z-index:2;position: relative;
+
 }
 .title1{
 	font-family: 'Coustard', serif;
 	font-size: 5rem;
 	text-transform: uppercase;
-	color: rgb(205, 155, 250);
+	color: rgb(123, 70, 170);
 z-index: 2;
 position: relative;
 top: 30rem;
@@ -242,7 +227,7 @@ top: 27.5rem;
 left: 20rem;
 border-radius: 1rem;
 box-shadow: 1.25rem 1.25rem 1.25rem rgba(50,50,50,.6);
-
+cursor: pointer;
 z-index: 2}
 .btn:hover{
 	color: rgb(98, 140, 254);
@@ -312,8 +297,9 @@ background-image:linear-gradient(
 		rgba(207, 156, 205, .85),
 		rgba(250, 200, 250, .85));
 height: 30rem;
-width: 65rem;
-border: solid grey .5rem;
+width: 55rem;
+border-radius: 5%;
+padding: 1rem;
 overflow: auto;
 }
 
@@ -553,7 +539,8 @@ top: 62.5rem;
 .bg-flex{
 	display: flex;
 	flex-direction: column;
-align-items: center;
+align-content: center;
+align-self:center;
 }
 .story-flex{
 	display: flex;
@@ -564,21 +551,34 @@ align-items: center;
 	flex-direction:row;
 	align-items: center;
 }
+@media screen and (min-width: 601px){
+html{
+	font-size: 62.5%;
+	width: 100%;
+	zoom: 75%;
+}
+}
+
+
+
 @media screen and (max-width: 600px){
 	html{
-		font-size: 30%;
-		width: 60%;
+		font-size: 40%;
+width: 100%;
+zoom: 80%;
+
 	}
 	.nav_button{
-		width: 10%;
-		height: 10%;
+		width: 10rem;
+		height: 10rem;
 	}
-.bg2-flex{ display:flex; 
-	flex-direction:column;
-align-items: center;
+.bgsec{
+	width: 120rem;
+	height: 60rem;
 }
 
 
 
 
 
+}
